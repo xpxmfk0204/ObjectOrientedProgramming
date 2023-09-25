@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a = 5, b = 6, c = 2;    // a = 101  b = 110  c = 010
+    int d = (a << 6) | (b << 3) | c;        
+    cout << oct << a << " " << b << " " << c << endl;
+    cout << d << endl;
+
+    a = b = c = 0;
+    a = (d & 0700) >> 6;
+    b = (d & 070) >> 3;
+    c = (d & 7);
+    cout << a << " " << b << " " << c << endl;
+    return 0;
+}
