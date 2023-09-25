@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(void)
+{
+    int ii, jj;
+    ii = -2;
+    jj = -2048;
+    cout<<hex<<"0x"<<ii<<endl;
+    cout<<hex<<"0x"<<jj<<endl;
+    short aa, bb;
+    aa = -256;
+    bb = -64;
+    cout<<hex<<"0x"<<aa<<endl;
+    cout<<hex<<"0x"<<bb<<endl;
+    return 0;
+}
