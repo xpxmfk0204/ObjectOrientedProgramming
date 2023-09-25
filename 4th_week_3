@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+struct triangle
+{
+    short a, b;
+    float c, sum_tri, area;
+    triangle() {a = 3; b = 4; c = sqrt(a*a + b*b); sum_tri = a+b+c; area = a*b/2;}
+    triangle(short aa, short bb) : a(aa), b(bb)
+    {
+        c = sqrt(a*a + b*b);
+        sum_tri = a + b + c;
+        area = a * b / 2;
+    }
+};
+int main(void)
+{
+    triangle bbb;
+    bbb = triangle(12, 5);
+    cout<<"빗변의 길이: "<<bbb.c<<endl;
+    cout<<"세 변의 길이의 합: "<<bbb.sum_tri<<endl;
+    cout<<"삼각형의 넓이: "<<bbb.area<<endl;
+    cout<<sizeof(triangle)<<endl;
+    return 0;
+}
