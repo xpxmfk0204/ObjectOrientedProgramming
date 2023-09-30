@@ -15,7 +15,7 @@ int main()
 
     for (t = 0.0; t < T; t += dt)
     {
-        expsin << t << " " << exp(-110 * t) * cos(2. * PI * 110 * t) << " " << exp(-110 * t) * sin(2. * PI * 110 * t) << endl;
+        expsin << t << " " <<100*cos(20*PI*t)*cos(2. * PI * 110 * t) << " " <<60*sin(240*PI*t) + 80*sin(2. * PI * 110 * t) << endl;
     }
     expsin.close();
 
