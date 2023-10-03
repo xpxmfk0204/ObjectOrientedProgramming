@@ -1,5 +1,5 @@
-과제 1
--변수 100개 묶기(array)
+//과제 1
+//-변수 100개 묶기(array)
 
 #include <iostream>
 using namespace std;
@@ -19,10 +19,8 @@ int main() {
     return 0;
 }
 
-
-
-과제 2
-- 20개의 랜덤한 숫자의 평균과 표준편차 계산
+//과제 2
+//- 20개의 랜덤한 숫자의 평균과 표준편차 계산
 
 #include <iostream>
 #include <cmath>
@@ -64,9 +62,8 @@ int main() {
     return 0;
 }
 
-
-과제 3
-- 값 저장 후 일부 값 수정
+//과제 3
+//- 값 저장 후 일부 값 수정
 
 #include <iostream>
 using namespace std;
@@ -85,8 +82,8 @@ int main() {
    getchar();
 }
 
-과제 4
-- sum 10개의 주소와 xxx의 값 hex로 표현
+//과제 4
+//- sum 10개의 주소와 xxx의 값 hex로 표현
 
 #include <iostream>
 using namespace std;
@@ -110,8 +107,8 @@ int main() {
     return 0;
 }
 
-과제 5
--short array에 int 값 넣기
+//과제 5
+//-short array에 int 값 넣기
 
 #include <iostream>
 using namespace std;
@@ -127,4 +124,3 @@ int main() {
    for (int i = 0; i < 7; i++)
       cout << "    0x" << hex << aa[i] << "\n";
 }
-
