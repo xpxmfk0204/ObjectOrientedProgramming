@@ -79,7 +79,6 @@ int main() {
    root[3] = 0.0; //root[3]에 0을 저장
    for (int i = 0; i < 10; i++)
          cout << sum[i] << " " << root[i] << endl;
-   getchar();
 }
 
 //과제 4
