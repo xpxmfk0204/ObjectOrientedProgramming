@@ -7,11 +7,12 @@ float factorial(int n) { if(n == 0 | n == 1) return 1; else return n * factorial
 int main(void) 
 {
 	float p,*biex, *bitheory;
-	int n, k, N = 1000, count;  // N number of experiment
-	n = 20;  p = 1.0 / 6.0;
-	biex = new float[n+1];                                  //biex array 0~20까지 21칸 생성
-	bitheory = new float[n+1];                              //bitheory array 0~20까지 21칸 생성
-	for (k = 0; k <= n; k++) biex[k] = 0;                   //biex array 전부 0으로 초기화
+	int n, k, N, count;  // N number of experiment
+    cout << "시행 횟수, 실험 횟수, 확률: " << endl;
+    cin >> n >> N >> p;
+	biex = new float[n+1];                                  
+	bitheory = new float[n+1];                              
+	for (k = 0; k <= n; k++) biex[k] = 0;                   
 	for (int nn = 0; nn < N; nn++) {
 		count = 0;
 		for (int j = 0; j < n; j++) if ((rand() / (float)RAND_MAX) < p) count++;               
