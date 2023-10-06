@@ -58,7 +58,11 @@ int main(void) {
     }
     for (int i = 0; i < N; i++)
     {
-        delete[] C[i], delete[] B[i], delete[] A[i];
+        delete[] C[i], delete[] A[i];
+    }
+    for (int i = 0; i < M; i++)
+    {
+        delete[] B[i];
     }
     delete[] C;
     delete[] B;
