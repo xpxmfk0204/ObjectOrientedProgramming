@@ -36,7 +36,7 @@ float getfrequency(char* h) {
     else if (strncmp(h, st_str7, 1) == 0) {// B(시)
         freq = 494;
     }
-    else if (strncmp(h, st_str8, 1) == 0) {// C#(높은 도)
+    else if (strncmp(h, st_str8, 1) == 0) {// Q(높은 도)
         freq = 523;
     }
     else {
