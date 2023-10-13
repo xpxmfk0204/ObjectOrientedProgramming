@@ -14,6 +14,7 @@ float getfrequency(char* h) {
     const char* st_str5 = "G";
     const char* st_str6 = "A";
     const char* st_str7 = "B";
+    const char* st_str8 = "Q";
     if (strncmp(h, st_str1, 1) == 0) { // C(도)
         freq = 261;
     }
@@ -34,6 +35,9 @@ float getfrequency(char* h) {
     }
     else if (strncmp(h, st_str7, 1) == 0) {// B(시)
         freq = 494;
+    }
+    else if (strncmp(h, st_str8, 1) == 0) {// C#(높은 도)
+        freq = 523;
     }
     else {
         cout << "getfreq() is rejected. because *h was " << *h << endl;
@@ -108,7 +112,7 @@ int main() {
     ss = new int[num];
     hh = new char[num];
     
-    ofstream xxx("my_music2.wav", ios::binary | ios::out);
+    ofstream xxx("my_music.wav", ios::binary | ios::out);
     if (!xxx) return 666;
     xxx.write(header, 44 * sizeof(char));
     for (int i = 0; i < num; i++) {
@@ -124,6 +128,7 @@ int main() {
         }
         xxx.write((char*)music_data, T[i] * (*fs) * sizeof(short));
     }
+    cout<<num<<endl;
     music.close();
     xxx.close();
     return 0;
