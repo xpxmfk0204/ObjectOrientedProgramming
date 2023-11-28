@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(void) {
-    int elapsedSeconds = 0, x, T = 3;
+    int elapsedSeconds = 0, x, T = 1;
     cout << " RANDMAX " << RAND_MAX << endl;
     while (elapsedSeconds < 18) {
         Sleep(T * 1000);
