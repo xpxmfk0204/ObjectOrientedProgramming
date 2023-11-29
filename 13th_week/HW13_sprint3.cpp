@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <unistd.h>
+#include <Windows.h>
 #include <fstream>
 using namespace std;
 int main(void) {
@@ -9,7 +9,7 @@ int main(void) {
     int NofPackets[120];
     vector <int> queue;
     while (elapsedSeconds < 120) {
-        sleep(T);
+        Sleep(T * 1000);
         int capacity = 100;
         int lost = 0;
         ni = rand() % 100;
